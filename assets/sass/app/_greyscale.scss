@@ -67,6 +67,9 @@ a {
 
   .navbar-brand {
     font-weight: 700;
+    font-family: "Times New Roman", Times, serif;
+    color: orange;
+    font-size: 20px;
 
     &:focus {
       outline: none;
@@ -201,7 +204,7 @@ a {
   &:focus {
     outline: none;
     color: $grayscale-light;
-    background: transparentize($grayscale-light, 0.9);
+    background: transparentize(orange, 0.2);
   }
 }
 
@@ -313,3 +316,127 @@ img {
     background: transparent;
   }
 }
+
+/************ flexslider **********/
+#flexHome {margin: 0;}
+#flexHome h1, #flexHome .flex-control-nav{text-align: center; margin-bottom: 44px;}
+.flexslider .slides > li{height:80px;}
+#flexHome {
+	background: transparent;
+	margin-top:0;
+}
+#flexHome .flex-control-nav	{
+text-align: center;
+}
+
+#flexHome h1 {
+	margin-bottom: 11px;
+	font-weight: 300;
+	font-size: 32px;
+	line-height:1em;
+	text-transform:uppercase;
+	padding:0;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+	width:100%;
+	text-align:center;
+	display: inline-block;
+}
+#flexHome h1:after  {content:''}
+#flexHome h2 {text-align:left; display: inline-block;}
+.flexslider .slides > li {height:110px;}
+
+.flex-control-nav{position:static; margin-top:22px;}
+.flex-control-nav li {margin-left: 0; margin-right:11px;}
+.flex-control-nav{display:none;}
+
+/*** MEDIA QUERIES ***/
+@media(max-width:400px){
+	.flexslider .slides > li {height:120px;}
+	.flexslider .slides > li{height:60px;}
+	#flexHome h2 {font-size: 12px;}
+}
+
+@media(min-width:768px){
+	.newsText{margin-bottom: 0;}
+	#flexHome h1 {font-size:20px;}
+	#flexHome {
+	margin-top:44px;
+	}
+	.flex-control-nav{display:block;}
+	.flexslider .slides > li {height:160px;}
+	.flexslider .slides > li{height:80px;}
+}
+@media(min-width:992px){
+	#flexHome h1 {font-size: 40px;}
+	#flexHome {
+	margin-top:66px;
+	}
+	.flexslider .slides > li {height:200px;}
+	.flexslider .slides > li{height:100px;}
+}
+
+/*** FLEX ***/
+
+.flexslider {
+	box-shadow:none;
+}
+.slides .txt div {
+	background:#444;
+	color:#FFFFFF;
+}
+.flexslider .flex-direction-nav a {
+	background-color:#7D1935;
+}
+
+.flexslider .flex-control-paging li a:hover, #sliderWrapper .flex-control-paging li a.flex-active{
+	background: #fff;
+	border:2px solid #fff;
+}
+.flexslider .flex-control-paging li a {
+	background: transparent;
+	border:2px solid rgba(255,255,255,0.5);
+}
+.flexslider .flex-control-nav {
+	background:transparent;
+}
+.flexslider h1 {
+	color:orange;
+	background-color:#7D1935;
+}
+.flexslider h2 {
+	color:orange;
+	background-color:#333;
+}
+.flexslider .caption p {
+	background-color:orange;
+	color:#555
+}
+
+/*** flexHome ***/
+#flexHome  h1 {	color:orange;
+	background:none;
+	}
+#flexHome  h2 {	color:orange;
+	background:none;
+}
+
+/*** END FLEX SLIDER ***/
+
+
+#about{
+    margin-top: 50px;
+   li {
+       font-size : 20px;
+   }
+}
+#aboutBackground{
+    background: url(../images/windsolar.jpg) no-repeat scroll top center;
+    height: 500px;
+}
+
+.nav.navbar-nav li a {
+    color: orange;
+    font-size: 17px;
+    font-weight: bold;
+}
+

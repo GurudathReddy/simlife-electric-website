@@ -24,6 +24,7 @@ var paths = {
         'assets/bower_components/jquery/dist/jquery.js',
         'assets/bower_components/jquery.easing/js/jquery.easing.js',
         'assets/bower_components/bootstrap/dist/js/bootstrap.js',
+        'assets/thirdparty/flexslider/jquery.flexslider-min.js',
         'assets/js/grayscale.js'
     ],
     images: ['assets/images/**/*'],
@@ -51,8 +52,8 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
     return gulp.src(paths.scripts)
-        /*.pipe(jshint('.jshintrc'))*/
-        .pipe(jshint.reporter('default'))
+        /*.pipe(jshint('.jshintrc'))
+        /*.pipe(jshint.reporter('default'))*/
         .pipe(concat('main.js'))
         .pipe(gulp.dest(paths.scriptsOutput))
         .pipe(rename({suffix: '.min'}))

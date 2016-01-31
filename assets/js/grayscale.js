@@ -176,3 +176,18 @@ function init() {
         icon: image
     });
 }
+
+$(document).ready(function () {
+
+/* Flexslider */
+    if ($('#flexHome').length) {
+
+        $('#flexHome').flexslider({
+            animation: "slide",
+            controlNav: true,
+            directionNav: false,
+            touch: true,
+            direction: "vertical"
+        });
+    }
+});
