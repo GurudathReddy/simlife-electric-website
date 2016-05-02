@@ -9,5 +9,5 @@
 2. Install bower dependencies (`bower update`)
 3. Use Gulp to compile/update (`gulp`)
 
- Access the website @ http://gurudathreddy.github.io/simpli-electric-website/
+ Access the website @ http://gurudathreddy.github.io/simlife-electric-website/
 
