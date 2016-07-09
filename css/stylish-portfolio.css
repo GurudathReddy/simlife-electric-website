@@ -16,6 +16,16 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+#top h1 {
+    color: orange;
+}
+
+#top .text-vertical-center {
+    vertical-align: top;
+    padding-top: 100px;
+    color: white;
+}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
